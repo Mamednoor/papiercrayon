@@ -131,8 +131,8 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
               alt='design'
               className='img-land'
             />
-          </div>{' '}
-        </Card>{' '}
+          </div>
+        </Card>
         <Modal
           className='modalcontainer'
           isOpen={modalDesignIsOpen}
@@ -146,18 +146,18 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
                 src={`https://papier-crayon-back.herokuapp.com/${product.picture}`}
                 className='modalimg'
               />
-            </figure>{' '}
+            </figure>
             <div className='modal-desc'>
               <div className='modal-name-line'>
-                <p className='modal-comment'> {product.name} </p>{' '}
-              </div>{' '}
+                <p className='modal-comment'> {product.name} </p>
+              </div>
               <div className='modal-comment-box'>
                 <CommentApp />
-              </div>{' '}
+              </div>
               <div className='icons-modal'>
                 <div className='icons-modal-first'>
-                  <img alt='' src={HEART} /> <img alt='' src={MESS} />{' '}
-                  <img alt='' src={SHARE} />{' '}
+                  <img alt='' src={HEART} /> <img alt='' src={MESS} />
+                  <img alt='' src={SHARE} />
                   <Button
                     className={classes.testdeletebutton}
                     aria-controls='fade-menu'
@@ -190,21 +190,21 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
                       className='figure-delete-button'
                       onClick={handleClick}
                     >
-                      X{' '}
-                    </button>{' '} */}
+                      X
+                    </button> */}
                   </Menu>
-                </div>{' '}
+                </div>
                 <div className='icons-modal-second'>
                   <img
                     alt=''
                     src={CART}
                     onClick={() => setModalDesignIsOpen2(true)}
-                  />{' '}
-                </div>{' '}
-              </div>{' '}
-            </div>{' '}
-          </div>{' '}
-        </Modal>{' '}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal>
         <Modal
           isOpen={modalDesignIsOpen2}
           onRequestClose={() => setModalDesignIsOpen2(false)}
@@ -212,19 +212,19 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
         >
           <div className='modal2container'>
             <div className='modal2-title'>
-              <p className='startingat'> Starting at {product.price}€ </p>{' '}
-            </div>{' '}
+              <p className='startingat'> Starting at {product.price}€ </p>
+            </div>
             <div className='modal2-img'>
-              <img alt='' src={SHIRT} /> <img alt='' src={SWEAT} />{' '}
-            </div>{' '}
+              <img alt='' src={SHIRT} /> <img alt='' src={SWEAT} />
+            </div>
             <div className='modal-quantity'>
               Quantity:
               <input
                 className='quantity-input'
                 onChange={handleQuantityChange}
                 value={quantity}
-              />{' '}
-            </div>{' '}
+              />
+            </div>
             <div className='modal-addcart'>
               <Link
                 className='hola'
@@ -232,8 +232,8 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
                   addBasket()
                 }}
               >
-                <p className='addtocartyes'> Add to cart </p>{' '}
-              </Link>{' '}
+                <p className='addtocartyes'> Add to cart </p>
+              </Link>
               <Button
                 className={classes.buttonbasket}
                 variant='contained'
@@ -241,12 +241,12 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
                   addBasket()
                 }}
               >
-                <p className='addtocart'> Buy now </p>{' '}
-              </Button>{' '}
-            </div>{' '}
-          </div>{' '}
-        </Modal>{' '}
-      </div>{' '}
+                <p className='addtocart'> Buy now </p>
+              </Button>
+            </div>
+          </div>
+        </Modal>
+      </div>
     </div>
   )
 }
