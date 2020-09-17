@@ -127,7 +127,7 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
         >
           <div className='design-img'>
             <img
-              src={`http://localhost:8080/${product.picture}`}
+              src={`https://papier-crayon-back.herokuapp.com/${product.picture}`}
               alt='design'
               className='img-land'
             />
