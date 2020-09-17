@@ -62,7 +62,7 @@ const AddDesign = (blabla) => {
     const headers = { authorization: token }
 
     axios
-      .post('http://localhost:8080/profile/designadding', formData, {
+      .post('https://papier-crayon-back.herokuapp.com/profile/designadding', formData, {
         headers
       })
       .then((res) => {

@@ -50,7 +50,7 @@ const Profile = ({ addMainDesign }) => {
   }
 
   const getPicture = () => {
-    axios.get(`http://localhost:8080/bio/${userid}/picture`).then((res) => {
+    axios.get(`https://papier-crayon-back.herokuapp.com/bio/${userid}/picture`).then((res) => {
       setPicture(res.data)
     })
   }
@@ -89,7 +89,7 @@ const Profile = ({ addMainDesign }) => {
         <div className='profile-pic'>
           <img
             className='profile-pp'
-            src={`http://localhost:8080/${picture.picture}`}
+            src={`https://papier-crayon-back.herokuapp.com/${picture.picture}`}
             alt='placeholder'
           />
         </div>

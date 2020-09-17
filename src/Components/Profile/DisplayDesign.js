@@ -105,7 +105,7 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
 
   const handleClick = () => {
     axios
-      .delete(`http://localhost:8080/profile/${userid}/designs/${product.id}/`)
+      .delete(`https://papier-crayon-back.herokuapp.com/profile/${userid}/designs/${product.id}/`)
       .then((res) => {
         deleteDesign(product.id)
         enqueueSnackbar('Your design has been deleted!', {
@@ -143,7 +143,7 @@ const DisplayDesign = ({ product, addMainDesign, deleteDesign }) => {
             <figure className='modalfigureimg'>
               <img
                 alt='design'
-                src={`http://localhost:8080/${product.picture}`}
+                src={`https://papier-crayon-back.herokuapp.com/${product.picture}`}
                 className='modalimg'
               />
             </figure>{' '}

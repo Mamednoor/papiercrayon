@@ -65,7 +65,7 @@ const Register = () => {
     <div>
       <Navbar />
       <div className='registercontainer'>
-        <h1> Register </h1>{' '}
+        <h1> Register </h1>
         <form className='registerform'>
           <div className='registerappcontainer'>
             <AppBar className={classes.appbar} position='static'>
@@ -77,9 +77,9 @@ const Register = () => {
                 name='firstname'
                 value={firstname}
                 onChange={(e) => setFirstname(e.target.value)}
-              />{' '}
-            </AppBar>{' '}
-          </div>{' '}
+              />
+            </AppBar>
+          </div>
           <div className='registerappcontainer'>
             <AppBar className={classes.appbar} position='static'>
               <input
@@ -90,9 +90,9 @@ const Register = () => {
                 name='lastname'
                 value={lastname}
                 onChange={(e) => setLastname(e.target.value)}
-              />{' '}
-            </AppBar>{' '}
-          </div>{' '}
+              />
+            </AppBar>
+          </div>
           <div className='registerappcontainer'>
             <AppBar className={classes.appbar} position='static'>
               <input
@@ -103,9 +103,9 @@ const Register = () => {
                 name='username'
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-              />{' '}
-            </AppBar>{' '}
-          </div>{' '}
+              />
+            </AppBar>
+          </div>
           <div className='registerappcontainer'>
             <AppBar className={classes.appbar} position='static'>
               <input
@@ -116,9 +116,9 @@ const Register = () => {
                 name='password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-              />{' '}
-            </AppBar>{' '}
-          </div>{' '}
+              />
+            </AppBar>
+          </div>
           <div className='registerappcontainer'>
             <AppBar className={classes.appbar} position='static'>
               <input
@@ -129,9 +129,9 @@ const Register = () => {
                 name='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-              />{' '}
-            </AppBar>{' '}
-          </div>{' '}
+              />
+            </AppBar>
+          </div>
           <div className='registerappcontainer'>
             <label className='FormField-CheckboxLabel'>
               <input
@@ -143,24 +143,24 @@ const Register = () => {
               />
               I agree all statements in
               <a href='www.google.fr' className='FormField-TermsLink'>
-                terms of service{' '}
-              </a>{' '}
-            </label>{' '}
-          </div>{' '}
+                terms of service
+              </a>
+            </label>
+          </div>
           <div className='signUpButton'>
             <Button
               className={classes.buttonsign}
               onClick={(e) => handleSubmit(e)}
               variant='contained'
             >
-              <p className='login-button-register'> SIGN UP </p>{' '}
-            </Button>{' '}
+              <p className='login-button-register'> SIGN UP </p>
+            </Button>
             <a href='/login' className='FormField-Link'>
-              I 'm already member{' '}
-            </a>{' '}
-          </div>{' '}
-        </form>{' '}
-      </div>{' '}
+              I 'm already member
+            </a>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }
