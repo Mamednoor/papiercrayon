@@ -3,7 +3,8 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
-const server = app.listen(`${process.env.PORT}`)
+const port = process.env.PORT || 8080
+const server = app.listen(port)
 const io = require('socket.io')(server)
 
 const morgan = require('morgan')
