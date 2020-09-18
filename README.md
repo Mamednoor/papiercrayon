@@ -2,7 +2,7 @@
 
 Projet crée au sein de la Wild code School pour le compte d'un client réel.
 
-Après explication de son projet nous avons réalisé ce site [Papier Crayon](https://papier-crayon.netlify.app/).
+Après explication de son projet (Backlog, User Stories, Mockup) nous avons réalisé ce site [Papier Crayon](https://papier-crayon.netlify.app/).
 
 Particularité, le client nous a demandé de nous concentré particulierement sur les features back :
 
