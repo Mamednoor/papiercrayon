@@ -1,6 +1,6 @@
 # papiercrayon
 
-Projet crée au sein de la Wild code School pour le compte d'un client réel.
+Projet crée au sein de la Wild code School.
 
 Après explication de son projet (Backlog, User Stories, Mockup) nous avons réalisé ce site [Papier Crayon](https://papier-crayon.netlify.app/).
 
